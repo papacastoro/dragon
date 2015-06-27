@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+
+/*
+Theme Name:   	Dragon
+Author:       	Dragon
+Version:      	1.0
+Text Domain:  	dragon
+*/
+
+html {
+	font-family: arial;
+}
+
+body {
+	margin:0;
+	background-color:#ffffff;
+}
+
+a {
+	background-color: trasparent;
+	margin:1px;
+}
+
+h1 {
+	font-size:10px;
+	margin:0;
+}
+
