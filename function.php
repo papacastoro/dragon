@@ -15,8 +15,9 @@
 	 
 	$theme 					= wp_get_theme( 'dragon' );
 	$storefront_version 	= $theme['Version'];
-		
+	
 	function dragon_widget_init(){
+		require get_template_directory() . '/inc/widget.php';
 			register('dragon_widget_init');
 	// Nav menu 
 	
@@ -71,4 +72,5 @@
 			'after_title' 		=> '</h3>',
 	));
 	}
+
 	
