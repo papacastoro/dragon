@@ -4,22 +4,20 @@
  * @subpackage dragon
  */
 
-	/**
-	 * Dimensioni contenuto
-	 */
+
+	// Dimensioni contenuto
+
 	if ( ! isset( $content_width ) ) {
 		$content_width = 1080; /* pixels */
 	}
 	
-	/**
-	 * Assegna versione a variabile
-	 */
-	
+	// Assegna versione a variabile
+	 
 	$theme 					= wp_get_theme( 'dragon' );
 	$storefront_version 	= $theme['Version'];
 		
 	function dragon_widget_init(){
-	
+			register('dragon_widget_init');
 	// Nav menu 
 	
 	register_nav_menus( array(

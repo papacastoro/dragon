@@ -12,13 +12,14 @@
 		<div id="footer" class="secondary"> 
 		
 			<div id="footer1"> 
+	
+				<?php 
 		
-		<?php 
-		
-			if(is_active_sidebar('footer1')){ 
-			dynamic_sidebar('footer1'); 
-			}
-		?>
+				if(is_active_sidebar('footer1')){ 
+				dynamic_sidebar('footer1'); 
+				}
+				?>
+				
 			</div>
 		</div>
 		
@@ -41,6 +42,7 @@
 	  		<?php bloginfo('name'); ?>
 		
 			</a>
+	
 	
 	<!-- chiusura footer -->
 		
