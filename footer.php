@@ -1,52 +1,51 @@
-<!-- contenitore footer -->
+<?php 
 
-	<div id="footer">...</div>
+/**
+ * @package wordpress
+ * @subpackage dragon
+ */
 
-<!--  navigazione footer -->
+?>
 
-	<div id="nav-footer">
-
-		<?php wp_nav_menu( array('theme_location' => 'footer-menu' ));?>
-
-	</div>
-
-<!--  widget -->
-
-
-	<?php if (!dynamic_sidebar( 'Footer' ) ) : ?>
-
-  	<!-- widget qui -->
-
-	<?php endif ?>
-
-<!--  metadati -->
-
-	<p>
-
-		<a href="<?php bloginfo('rss2_url'); ?>" rel="nofollow">Feed RSS </a>
- | 
- 		<a href="<?php bloginfo('comments_rss2_url'); ?>" rel="nofollow">RSS </a>
-
-	</p>
-
-<!-- copyright -->
-
-
-	<p>&copy; 
+	<!-- contenitore footer -->
 	
-		<?php echo date("Y") ?> 
-
-		<a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>">
-  
-  		<?php bloginfo('name'); ?>
+		<div id="footer" class="secondary"> 
+		
+			<div id="footer1"> 
+		
+		<?php 
+		
+			if(is_active_sidebar('footer1')){ 
+			dynamic_sidebar('footer1'); 
+			}
+		?>
+			</div>
+		</div>
+		
+		//  navigazione footer
 	
-		</a>. Vietata la vendita.
-	</p>
-
-<!-- chiusura footer -->
+		<div id="nav-footer">
 	
+			<?php wp_nav_menu( array('theme_location' => 'footer-menu' ));?>
 	
-	<?php wp_footer();?>
+		</div>
 	
-	</body></html>
+	<!-- copyright -->
 	
+		<p>&copy; 
+		
+			<?php echo date("Y") ?> 
+	
+			<a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>">
+	  
+	  		<?php bloginfo('name'); ?>
+		
+			</a>
+	
+	<!-- chiusura footer -->
+		
+		
+		<?php wp_footer();?>
+		
+		</body></html>
+		

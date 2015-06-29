@@ -1,6 +1,7 @@
 <?php
 /**
-* @package dragon
+* @package wordpress
+* @subpackage dragon
 */
 
 get_header(); ?>

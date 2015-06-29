@@ -1,6 +1,7 @@
 <?php
 /**
-* @package dragon
+* @package wordpress
+* @subpackage dragon
 */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

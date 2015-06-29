@@ -1,7 +1,8 @@
 <?php
 
 /**
- * @package dragon
+ * @package worpress
+ * @subpackage dragon
 */
 
 ?>
@@ -68,6 +69,18 @@
 	
 	<div id="site">
 	
+	<div id="widgetized-header">
+
+		    <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('header')) : else : ?>
+		
+		    	<div class="pre-widget">
+					
+					<!--messaggio alternativo -->
+				</div>
+		
+			<?php endif; ?>
+
+	</div>
 		<!-- struttura header -->
 		
 	<div id="branding">
