@@ -23,7 +23,7 @@
 			</div>
 		</div>
 		
-		//  navigazione footer
+		<!--  navigazione footer -->
 	
 		<div id="nav-footer">
 	

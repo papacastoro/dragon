@@ -1,33 +1,15 @@
-<?php
-/**
-* @package wordpress
-* @subpackage dragon
-*/
 
-get_header(); ?>
+<div class="content-page">
+  <!-- contenuto qui -->
+</div>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-				do_action( 'dragon_page_before' );
-				?>
-
-				<?php get_template_part( 'content', 'page' ); ?>
-
-				<?php
-				/**
-				 * @hooked storefront_display_comments - 10
-				 */
-				do_action( 'dragon_page_after' );
-				?>
-
-			<?php endwhile; // end of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php do_action( 'dragon_sidebar2' ); ?>
+<!-- contenuto qui -->
+<h1><?php the_title(); ?></h1>
+<?php the_content(); ?>
+<?php get_header(); ?>
+<div id="content">
+  <?php the_post(); ?>
+  <?php get_template_part( 'content', 'page' ); ?>
+</div>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
