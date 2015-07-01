@@ -35,5 +35,4 @@
 	public function update( $new_instance, $old_instance ) {
 		// processes widget options to be saved
 	}
-}
-?>
+}?>
