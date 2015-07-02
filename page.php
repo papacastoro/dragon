@@ -1,4 +1,10 @@
+<!-- serve a vedere l'id di un post -->
 
+	<?php 
+	$examplePost = get_post();
+
+	echo $examplePost->ID; // Stampa l'ID del post?>
+	
 <div class="content-page">
   <!-- contenuto qui -->
 </div>
